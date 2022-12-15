@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo bảng cửu chương</title>
+</head>
+<body>
+<script>
+    let sout;
+    sout = "<table border='1'>"
+    for (let i =1; i<=9; i++) {
+        sout = sout + "<tr>"
+        for (let j=1; j <= 9; j++){
+            sout = sout + "<td>" + j + "*" + i + "=" + i * j + "</td>";
+        }
+        sout = sout + "</tr>"
+    }
+    sout = sout + "</table>"
+    document.write(sout)
+</script>
+
+</body>
+</html>
