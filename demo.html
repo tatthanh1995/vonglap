@@ -6,8 +6,17 @@
 </head>
 <body>
 <script>
+    document.write("<table border='1'>");
+        for (let i=0; i<11;i++){
+            i++;
+            document.write("<tr></tr>")
+            for(let j=0; j<11; j++){
+                j++;
+                document.write("<td>" + i*j +"</td>")
+            }
+        }
 
-
+    document.write("</table>")
 </script>
 </body>
 </html>
