@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<script>
+  let start = 0;
+  let n = 30;
+  let count = 0;
+  let total = 0;
+  while (count<n) {
+    if (start % 7 === 0) {
+      console.log(start);
+      count++;
+      total += start;
+    }
+    start++;
+  }
+  document.write(total)
+</script>
+</body>
+</html>

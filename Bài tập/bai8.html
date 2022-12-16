@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+<button onclick="ngaunhien()">Chơi</button>
+<script>
+    function ngaunhien() {
+        let check = parseInt(prompt("Nhập khoảng bạn đoán"));
+        let pick = parseInt(prompt("Nhập số bạn đoán"));
+        let random = Math.floor(Math.random() * check);
+        console.log(random);
+        let count = 0;
+        while (pick != random) {
+            count++;
+            if (pick < random){
+                alert("Số bạn đoán nhỏ hơn");
+            }
+            else if (pick > random){
+                alert("Số bạn đoán lớn hơn");
+            }
+            pick = parseInt(prompt("Nhập số bạn đoán"))
+            if (pick == random){
+                alert("Chúc mừng");
+                break;
+            }
+            if (count = 4) {
+                alert("Hết lượt");
+                break;
+            }
+
+        }
+
+
+    }
+</script>
+</body>
+</html>
